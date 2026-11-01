@@ -1,1 +1,1 @@
-export function buildRequest(text: string, language: string) { return { text }; }
+export function buildRequest(text: string, language: string) { return { text, language }; }
