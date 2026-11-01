@@ -5,6 +5,6 @@ func subtotal(prices []int) int { n:=0; for _, p:=range prices { n+=p }; return 
 func discounted(total, discount int) int { return total-discount }
 func Total(o Order) int {
     total:=subtotal(o.Prices)
-    if o.Discount != 0 { return discounted(total+subtotal(o.Prices), o.Discount) }
+    if o.Discount != 0 { return discounted(total, o.Discount) }
     return total
 }
